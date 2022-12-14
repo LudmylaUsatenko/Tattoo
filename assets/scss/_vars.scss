@@ -1,70 +1,70 @@
 // Vars
-$main-font: 'Bebas Neue', cursive;
-$secondary-font: 'Gothic A1', sans-serif;
-$white-color: #FFFFFF;
+$main-font: "Bebas Neue", cursive;
+$secondary-font: "Gothic A1", sans-serif;
+$white-color: #ffffff;
 $black-color: #121213;
 $grey-color: #666666;
+$transition: all 0.3s ease;
 $tablet: 1024px;
 $mobile: 767px;
 
 // Mixins
-@mixin for-tablet{
-    @media(max-width:$tablet){
-        @content;
-    }
+@mixin for-tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
 }
 
-@mixin for-mobile{
-    @media(max-width:$mobile){
-        @content;
-    }
+@mixin for-mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
 }
 
-@mixin media-query($tablet-size, $tablet-lh, $mobile-size){
-    @media(max-width:$tablet){
-        font-size: $tablet-size;
-        line-height: $tablet-lh;
-    }
-    @media(max-width:$mobile){
-        font-size: $mobile-size; 
-    }
+@mixin media-query($tablet-size, $tablet-lh, $mobile-size) {
+  @media (max-width: $tablet) {
+    font-size: $tablet-size;
+    line-height: $tablet-lh;
+  }
+  @media (max-width: $mobile) {
+    font-size: $mobile-size;
+  }
 }
-
 
 // Extends
 %title {
-    font-size: 144px;
-    line-height: 115px;
-    letter-spacing: -0.02em;
-    @include media-query(90px, 0.8em, 48px);
+  font-size: 144px;
+  line-height: 115px;
+  letter-spacing: -0.02em;
+  @include media-query(90px, 0.8em, 48px);
 
-    span {
-        color: $grey-color;
-    }
+  span {
+    color: $grey-color;
+  }
 }
 
 %white-bth {
-    width: 320px;
-    height: 80px;
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: -0.02em;
-    color: $black-color;
-    background: $white-color;
-    border: 2px solid $white-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+  width: 320px;
+  height: 80px;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: $black-color;
+  background: $white-color;
+  border: 2px solid $white-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 
-    &:hover {
-        background: $black-color;
-        color: $white-color;
-    }
+  &:hover {
+    background: $black-color;
+    color: $white-color;
+  }
 
-    @media(max-width: 425px) {
-        height: 60px;
-        width: 100%;
-    }
+  @media (max-width: 425px) {
+    height: 60px;
+    width: 100%;
+  }
 }
