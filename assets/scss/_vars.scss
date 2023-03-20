@@ -36,10 +36,14 @@ $mobile: 767px;
   font-size: 144px;
   line-height: 115px;
   letter-spacing: -0.02em;
-  @include media-query(90px, 0.8em, 48px);
+  @include media-query(90px, 0.8em, 64px);
 
   span {
     color: $grey-color;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 42px;
   }
 }
 
