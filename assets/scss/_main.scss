@@ -370,7 +370,7 @@
 
 // Masters
 .masters {
-  margin-bottom: 200px;
+  margin-bottom: 196px;
   h2 {
     @extend %title;
     margin: 0 auto 100px;
@@ -414,6 +414,98 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+// Footer
+.footer {
+  margin-bottom: 150px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid $white-color;
+    padding-top: 200px;
+  }
+
+  &__left-part {
+    width: 50%;
+    margin-right: 40px;
+  }
+
+  &__title {
+    @extend %title;
+    margin-bottom: 80px;
+  }
+
+  &__btn {
+    @extend %white-bth;
+  }
+
+  &__right-part {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+      line-height: 22px;
+      color: $grey-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: $secondary-font;
+      margin-top: 27px;
+      margin-bottom: 80px;
+      color: $grey-color;
+    }
+  }
+
+  &__tel {
+    font-family: $secondary-font;
+    color: $white-color;
+    letter-spacing: -0.04em;
+    &:hover {
+      color: $grey-color;
+    }
+  }
+
+  &__email {
+    font-family: $secondary-font;
+    color: $white-color;
+    &:hover {
+      color: $grey-color;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    margin-bottom: 20px;
+
+    li {
+      &:not(:last-child) {
+        padding-right: 35px;
+      }
+      svg {
+        fill: $white-color;
+        &:hover {
+          fill: $grey-color;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 31px;
+    li {
+      &:not(:last-child) {
+        padding-right: 20px;
+      }
     }
   }
 }

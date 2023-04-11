@@ -434,3 +434,72 @@
     }
   }
 }
+
+// Footer
+.footer {
+  @media (max-width: 1250px) and (min-width: 1025px) {
+    &__title {
+      font-size: 109px;
+      line-height: 100px;
+    }
+  }
+  @media (max-width: $tablet) {
+    margin-bottom: 100px;
+
+    &__wrapper {
+      padding-top: 100px;
+    }
+
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 80px;
+
+    &__wrapper {
+      padding-top: 80px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__left-part {
+      width: 100%;
+      margin-right: inherit;
+      margin-bottom: 50px;
+    }
+
+    &__btn {
+      margin: 0 auto;
+    }
+
+    &__right-part {
+      width: 100%;
+      max-width: inherit;
+    }
+
+    &__tel {
+      padding-right: 30px;
+    }
+
+    &__social-list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__nav {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__email {
+      font-size: 20px;
+    }
+  }
+}
